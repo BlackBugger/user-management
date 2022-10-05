@@ -1,0 +1,40 @@
+:root{
+    --dark: #2b2d42;
+    --light: #adb5bd;
+    --border: #dee2e6;
+    --border-btn: #edf2f4;
+}
+.table .thead-dark{
+    background-color: var(--dark);
+}
+
+.form-control {
+    text-align: center;
+}
+
+/* .container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+} */
+
+/* .card {
+    
+    background: rgba(10, 153, 146, 0.514);
+    padding: 2rem;
+    border-radius: 20px;
+    text-align: center;
+    margin: 1rem;
+
+} */
+/* 
+.cont{
+    max-width: 1024px;
+    margin: auto;
+}
+
+.table{
+    text-align: center;
+    padding:5;
+} */
