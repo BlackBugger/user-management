@@ -12,9 +12,9 @@ import ADD from "../components/add_user/add_user";
 // AXIOS
 import axios from 'axios';
 const api = axios.create({
-    baseURL: "http://localhost:4000",
+    baseURL: "https://cruz-user-management.herokuapp.com",
     Accept: "application/json",
-  });
+});
 
 // OTHER FUNCTIONS
 // import { forceUpdate, forceUpdateSet, getData } from '../frontend/actions/data'
@@ -52,15 +52,15 @@ function Home() {
 
     const getData = async (setUsers) => {
         try {
-          const res = await api.get("/api/users");
-      
-          const data = res.data;
-          setUsers(data);
-          console.log("Data Successfully Logged!");
+            const res = await api.get("/api/users");
+
+            const data = res.data;
+            setUsers(data);
+            console.log("Data Successfully Logged!");
         } catch (err) {
-          console.log("getData not workeng", err);
+            console.log("getData not workeng", err);
         }
-      };
+    };
 
     useEffect(() => {
         getData(setUsers);
