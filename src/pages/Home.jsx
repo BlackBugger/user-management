@@ -12,7 +12,7 @@ import ADD from "../components/add_user/add_user";
 // AXIOS - API
 import axios from 'axios';
 const api = axios.create({
-    baseURL: "test",
+    baseURL: "http://user-management-server.up.railway.app",
     Accept: "application/json",
 });
 
