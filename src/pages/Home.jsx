@@ -82,10 +82,9 @@ function Home() {
     }
 
     // UPDATE
-    const updateMe = (userss) => {
-
-
-        fetch(`http://localhost:4000/api/users/${updateID}`, {
+    const updateMe = async (e) => {
+e.preventDefault()
+await fetch(`http://localhost:4000/api/users/${updateID}`, {
             method: 'PUT',
             headers: {
                 'Accept': 'application/json',
@@ -100,15 +99,8 @@ function Home() {
                 "status": status
 
             })
-        }).then((result) => {
-            result.json().then((resp) => {
-                console.warn("responsez", resp)
-                getData(setUsers)
-
-
-            })
         })
-
+await getData(setUsers)
 
     }
 
@@ -136,9 +128,9 @@ function Home() {
 
     return (
         // HEADER //
-        <div className='container-fluid vh-100 pt-4'>
-            <div className='text-center mb-4'>
-                <div className='w-50 m-auto bg-primary  border rounded-3 mb-4'>
+        <div className='container-fluid  pt-4 d-flex justify-content-center align-items-center'>
+            <div className=' text-center mb-4'>
+                <div className=' bg-primary  border rounded-3 mb-4'>
                     <h1> USER MANAGEMENT </h1>
                 </div>
 
@@ -219,7 +211,7 @@ function Home() {
 
                                     <div className="modal-footer form-group">
                                         <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                                        <button type="submit" className="btn btn-primary" disabled={state} >Update</button>
+                                        <button type="submit" className="btn btn-primary" data-bs-dismiss="modal" disabled={state} >Update</button>
                                     </div>
                                 </form>
                             </div>
@@ -228,7 +220,7 @@ function Home() {
                 </div>
 
                 {/* TABLE */}
-                <div className='forms w-50 m-auto'>
+                <div className='form mx-auto'>
                     <table className='table table-hover'>
                         <thead className='thead-dark text-light border-top'>
                             <tr>

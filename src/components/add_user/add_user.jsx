@@ -58,11 +58,11 @@ const add_user = () => {
 
                                     <div className='row'>
                                         <div className="mb-3 col-md-6">
-                                            <label htmlFor="firstname" className="form-label">sssFirstName:</label>
-                                            <input type="text" name='firstName' className="form-control" id="input-firstname" placeholder="Testing" onChange={e => setFirstname(e.target.value)} />
+                                            <label htmlFor="firstname" className="form-label">First Name:</label>
+                                            <input type="text" name='firstName' className="form-control" id="input-firstname" onChange={e => setFirstname(e.target.value)} />
                                         </div>
                                         <div className="mb-3 col-md-6">
-                                            <label htmlFor="lastname" className="form-label">Lastname:</label>
+                                            <label htmlFor="lastname" className="form-label">Last Name:</label>
                                             <input type="text" name='lastName' className="form-control" id="input-lastname" onChange={e => setLastname(e.target.value)} />
                                         </div>
                                     </div>
