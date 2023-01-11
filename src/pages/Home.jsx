@@ -9,10 +9,10 @@ import { useState, useEffect } from 'react';
 // COMPONENTS
 import ADD from "../components/add_user/add_user";
 
-// AXIOS
+// AXIOS - API
 import axios from 'axios';
 const api = axios.create({
-    baseURL: "https://cruz-user-management.herokuapp.com",
+    baseURL: "test",
     Accept: "application/json",
 });
 
@@ -205,7 +205,7 @@ function Home() {
                                                         <input className="form-check-input" type="radio" name="gender" value="Female" onChange={(e) => { setGender(e.target.value) }} required />
                                                         <label className="form-check-label">F</label>
                                                     </div>
-                                                </div>
+                                            </div>
                                                 <div className="mb-3 col-md-6">
                                                     <div className="form-check form-check-inline">
                                                         <input className="form-check-input" type="radio" name="status" value="Active" onChange={(e) => { setStatus(e.target.value) }} required />
@@ -240,7 +240,7 @@ function Home() {
                                 <th>Firstname</th>
                                 <th>Lastname</th>
                                 <th>Email</th>
-                                <th>Gender</th>
+                                    <th>Gender</th>
                                 <th>Status</th>
                                 <th>Action</th>
                             </tr>
