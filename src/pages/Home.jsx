@@ -128,9 +128,9 @@ await getData(setUsers)
 
     return (
         // HEADER //
-        <div className='container-fluid  pt-4 d-flex justify-content-center align-items-center'>
+        <div className='container-fluid bg vh-100 pt-4 d-flex justify-content-center align-items-start'>
             <div className=' text-center mb-4'>
-                <div className=' bg-primary  border rounded-3 mb-4'>
+                <div className=' bg-primary  p-1 rounded-3 mb-4'>
                     <h1> USER MANAGEMENT </h1>
                 </div>
 
@@ -222,7 +222,7 @@ await getData(setUsers)
                 {/* TABLE */}
                 <div className='form mx-auto'>
                     <table className='table table-hover'>
-                        <thead className='thead-dark text-light border-top'>
+                        <thead className='thead-dark text-light'>
                             <tr>
                                 <th>ID #</th>
                                 <th>Firstname</th>
