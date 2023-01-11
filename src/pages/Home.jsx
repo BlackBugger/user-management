@@ -25,9 +25,6 @@ import './home.css';
 import LineIcon from "react-lineicons";
 
 
-
-
-
 function Home() {
     // FORCE UPDATE
     const [ignored, forceUpdate] = useReducer((x) => x + 1, 0);
@@ -124,16 +121,16 @@ function Home() {
     }
 
     // DELETE BUTTON
-    const deleteme = () => {
+    const deleteme = async() => {
 
         try {
-            const response = api.delete(`/api/users/${deleteID}`);
+            const response = await api.delete(`/api/users/${deleteID}`);
 
         } catch (err) {
             console.log(err);
         }
-        getData(setUsers)
-        forceUpdate()
+    
+        await getData(setUsers)
 
     }
 
