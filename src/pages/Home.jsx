@@ -17,7 +17,6 @@ const api = axios.create({
 });
 
 // OTHER FUNCTIONS
-// import { forceUpdate, forceUpdateSet, getData } from '../frontend/actions/data'
 import { useNavigate } from 'react-router-dom';
 
 
