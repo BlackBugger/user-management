@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+# SIMPLE USER MANAGEMENT
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+I built a user management system using the MERN stack. I used MongoDB database to store user data, and used Express to create an API for performing CRUD operations on that data.
 
-## Available Scripts
+## Functionality
 
-In the project directory, you can run:
+User should be able to:
 
-### `npm start`
+- Create. Remove. Update. Delete.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Screenshot
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![](./usermanagement.png)
 
-### `npm test`
+### Links
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Live Site URL: [User Management](https://cruz-user-management.netlify.app/)
 
-### `npm run build`
+## My process
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+-I built a user management system using the MERN stack, focusing on the server side using MongoDB, Express, and Node.js. I set up a MongoDB database to store user data and used Express to create an API for performing CRUD operations on that data. This API handled requests such as creating new users, updating existing users, and deleting users. Additionally, I deployed the application on a server using technologies like Railway.app after Heroku ended its free service and MongoDB Atlas. I used netlify to deploy the website, to make it accessible from anywhere. Overall, it was a challenging but rewarding experience working with the server side of the MERN stack.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Difficulties
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+As I built the user management system using the MERN stack, I faced some difficulties. One of the main challenges was handling the communication between the React front-end and the Express back-end. Since they are two different applications, I had to make sure that the correct data was being passed back and forth between them using Axios. I also had to ensure that the routes on the Express server matched the routes being accessed on the front-end, and that the correct data was being passed in the requests.
 
-### `npm run eject`
+## My Solution
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+To overcome the difficulties faced while building the user management system using the MERN stack, I took the following measures:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- To handle the communication between the React front-end and the Express back-end, I made sure to thoroughly test all routes and requests using tools such as Postman, and also used proper error handling mechanisms in both the front-end and back-end code.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- To tackle the deployment challenges, I used Railway.app for easy deployment and scaling of the application. I also made sure to properly configure the server and environment variables to ensure the smooth running of the application.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- In terms of the user interface, I made sure to keep the design consistent and easy to navigate. I also made sure that the components were well-organized and easy to understand.
 
-## Learn More
+Overall, these measures helped me to handle the challenges and build a simple but functional user management system using the MERN stack.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Built with
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [React](https://reactjs.org/) - JS library
+- [Bootstrap](https://getbootstrap.com/) - For Styles
+- [Mongoose](https://www.mongodb.com/developer/languages/javascript/getting-started-with-mongodb-and-mongoose/) - For Database
+- [Express](https://www.mongodb.com/languages/express-mongodb-rest-api-tutorial) - For establishing API
+- [NodeJS](https://nodejs.org/en/) - For running express
+- [Axios](https://vishalghai.medium.com/mern-talks-how-to-use-axios-and-express-in-mern-stack-development-27e5a00de194) - For http requests
