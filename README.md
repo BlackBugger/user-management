@@ -10,7 +10,7 @@ User should be able to:
 
 ### Screenshot
 
-![](./usermanagement.png)
+![](usermanagement.png)
 
 ### Links
 
