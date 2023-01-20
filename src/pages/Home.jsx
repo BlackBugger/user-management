@@ -84,7 +84,7 @@ function Home() {
     // UPDATE
     const updateMe = async (e) => {
 e.preventDefault()
-await fetch(`http://localhost:4000/api/users/${updateID}`, {
+await fetch(`https://user-management-server.up.railway.app/api/users/${updateID}`, {
             method: 'PUT',
             headers: {
                 'Accept': 'application/json',
