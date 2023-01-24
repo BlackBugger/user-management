@@ -9,9 +9,9 @@ import { useNavigate } from 'react-router-dom';
 const api = axios.create({
     baseURL: "https://user-management-server.up.railway.app/",
     Accept: "application/json",
-  });
+});
 
-const add_user = () => {
+const add_user = (props) => {
     const [firstname, setFirstname] = useState('');
     const [lastname, setLastname] = useState('');
     const [email, setEmail] = useState('');
@@ -20,7 +20,7 @@ const add_user = () => {
     const navigate = useNavigate();
 
     const submit = async (event) => {
-        
+        event.preventDefault();
         const body = {
             firstName: firstname,
             lastName: lastname,
@@ -28,13 +28,13 @@ const add_user = () => {
             gender: gender,
             status: status
         }
-        
+
         const response = await api.post('/api/users', body)
-        event.preventDefault();
+
 
         console.log('form submitted ✅');
-        
-       
+        await props.getData()
+
 
     }
     const handleSubmit = event => {

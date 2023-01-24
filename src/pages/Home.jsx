@@ -135,7 +135,7 @@ await getData(setUsers)
                 </div>
 
                 {/* ADD USER JSX UI */}
-                <ADD />
+                <ADD getData={()=>getData(setUsers)}/>
 
                 {/* DELETE BUTTON*/}
                 <div className="modal fade" id="delete" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
