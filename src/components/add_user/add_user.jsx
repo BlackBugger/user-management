@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router-dom';
 // import { api } from '../../frontend/api/api';
 
 const api = axios.create({
-    baseURL: "https://user-management-server.up.railway.app",
+    baseURL: "https://user-management-server.up.railway.app/",
     Accept: "application/json",
   });
 
